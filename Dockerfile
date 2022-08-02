@@ -4,6 +4,8 @@ RUN apk add --no-cache gcc make musl-dev linux-headers git \
       motor \
       pyjwt \
       sanic \
+      pyyaml \
+      kubernetes_asyncio \
       git+https://github.com/Assarius/sanic-prometheus@Sanic_22
 FROM python:alpine
 COPY --from=build /wheels /wheels
