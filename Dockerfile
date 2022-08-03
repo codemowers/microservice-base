@@ -1,7 +1,9 @@
 FROM python:alpine AS build
 RUN apk add --no-cache gcc make musl-dev linux-headers git \
  && pip3 wheel --wheel-dir=/wheels \
+      flask \
       git+https://github.com/Assarius/sanic-prometheus@Sanic_22 \
+      kubernetes \
       kubernetes_asyncio \
       motor \
       pyjwt \
