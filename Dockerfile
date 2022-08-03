@@ -12,7 +12,7 @@ RUN apk add --no-cache gcc make musl-dev linux-headers git \
       velebit-useful-logs
 FROM python:alpine
 COPY --from=build /wheels /wheels
-RUN pip3 install --no-index --find-links /wheels/*.whl && rm -Rfv /wheels
+RUN pip3 install --no-index /wheels/*.whl && rm -Rfv /wheels
 LABEL name="k-space/microservice-base" \
       version="rc" \
       maintainer="Lauri Võsandi <lauri@k-space.ee>"
