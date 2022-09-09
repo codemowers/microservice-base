@@ -9,7 +9,7 @@ RUN apk add --no-cache gcc make musl-dev linux-headers git \
       pyjwt \
       pyyaml \
       sanic \
-      velebit-useful-logs
+      ecs-logging
 FROM python:alpine
 COPY --from=build /wheels /wheels
 RUN pip3 install --no-index /wheels/*.whl && rm -Rfv /wheels
