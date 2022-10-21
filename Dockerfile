@@ -6,6 +6,7 @@ RUN apk add --no-cache gcc make musl-dev linux-headers git \
       kubernetes \
       kubernetes_asyncio \
       motor \
+      prometheus-async \
       pyjwt \
       pyyaml \
       sanic \
