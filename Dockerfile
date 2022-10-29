@@ -10,6 +10,7 @@ RUN apk add --no-cache gcc make musl-dev linux-headers git \
       pyjwt \
       pyyaml \
       sanic \
+      sanic-ext \
       ecs-logging
 FROM python:alpine
 COPY --from=build /wheels /wheels
