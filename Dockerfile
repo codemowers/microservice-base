@@ -19,3 +19,4 @@ RUN pip3 install --no-index /wheels/*.whl && rm -Rfv /wheels
 LABEL name="k-space/microservice-base" \
       version="rc" \
       maintainer="Lauri Võsandi <lauri@k-space.ee>"
+ENV PYTHONUNBUFFERED=1
