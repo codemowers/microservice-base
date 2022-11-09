@@ -30,3 +30,4 @@ LABEL name="k-space/microservice-base" \
       version="rc" \
       maintainer="Lauri Võsandi <lauri@k-space.ee>"
 ENV PYTHONUNBUFFERED=1
+ENV CAIO_IMPL=linux
