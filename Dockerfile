@@ -3,7 +3,7 @@ RUN apk add --no-cache gcc make musl-dev linux-headers git \
  && pip3 wheel --wheel-dir=/wheels \
       aiofile \
       flask \
-      git+https://github.com/Assarius/sanic-prometheus@Sanic_22 \
+      git+https://github.com/laurivosandi/sanic-prometheus \
       kubernetes \
       kubernetes_asyncio \
       motor \
