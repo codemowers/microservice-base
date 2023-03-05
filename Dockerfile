@@ -1,7 +1,8 @@
 FROM python:alpine AS build
-RUN apk add --no-cache gcc make musl-dev linux-headers git \
+RUN apk add --no-cache gcc make musl-dev linux-headers libressl-dev libffi-dev git \
  && pip3 wheel --wheel-dir=/wheels \
       aiofile \
+      cryptography \
       flask \
       git+https://github.com/laurivosandi/sanic-prometheus \
       kubernetes \
